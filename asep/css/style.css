@@ -1,9 +1,11 @@
+@import url('https://');
+
 body {
     background-image: url('../img/bg.jpg');
     background-repeat: repeat;
     padding: 0;
     margin: 0;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 .container{
@@ -19,20 +21,21 @@ ul {
 
 /* Navbar */
 header {
-    padding-top: 10px;
     min-height: 50px;
-    border-bottom: greenyellow 4px solid;
+    border-bottom: #23DF23 5px solid;
 }
 
 header li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
+    top: 50%;
 }
 
 header a {
-    color: gray;
-    font-size: 12px;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -47,9 +50,72 @@ header .brand {
 
 header .brand h1 {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 50px;
+    top: 50%;
+}
+
+/* 2 Box 1 Div */
+#left {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+#left h1 {
+    font-weight: 800;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#left p {
+    letter-spacing: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: darkgray;
+}
+
+#left .button {
+    background-color: #23DF23;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    position: relative;
+    height: 40px;
+    width: 155px;
+}
+
+#left button img{
+    width: 18px;
+    margin-left: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+    float: left;
+}
+
+#left button p {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: normal;
+    float: left;
+    margin-top: 0px;
+}
+
+#right {
+    margin-top: 50px;
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+#right img {
+    max-width: 65%;
+    margin-left: 20%;
 }
 
 /* Media Queries */
@@ -71,5 +137,3 @@ header .brand h1 {
         color: white;
     }
 }
-  
-  
