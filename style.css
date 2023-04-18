@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5e6d1;
+}
+
+/* nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    position: fixed;
+    height: 10vh;
+    align-items: center;
+    padding: 0 3vw;
+    background-color:#f5e6d1;
+}
+
+.nav-title {
+    font-size: 24px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover {
+    font-weight: 800;
+}
+
+.nav-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+/* Home */
+
+.home {
+    padding-top: 10vh;
+    height: 100vh;
+    background-image: url(./assets/aeimnestus.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 40%;
+}
+
+.home-intro {
+    padding-top: 32vh;
+    padding-left: 5vw;
+}
+
+.home-intro > h1 {
+    font-size: 72px;
+}
+
+.home-highlight {
+    color: #8b7f6e;
+}
+
+.home-typewrite {
+    color: #8b7f6e;
+}
+
+/* About */
+
+.about {
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+.about-intro {
+    padding-left: 8vw;
+}
+
+.about-intro > h1 {
+    font-size: 76px;
+}
+
+.about-intro > p {
+    font-size: 24px;
+}
+
+.about-cards {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10vh;
+    height: 50vh;
+    justify-content: space-between;
+}
+
+.about-card {
+    background-color: #8b7f6e;
+    border-radius: 20px;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+}
+
+.about-card > h1 {
+    padding-top: 3vh;
+}
+
+/* Projects */
+
+.projects {
+    height: 100vh;
+}
+
+.temp {
+    text-align: center;
+    font-size: 96px;
+    padding-top: 45vh;
+}
+
+/* Contact */
+
+.contact {
+    height: 100vh;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px){
+
+    /* Nav & Hamburger Mobile */
+
+    nav {
+        min-height: 10vh;
+    }
+
+    .nav-hamburger {
+        display: block;
+    }
+
+    .nav-hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-list {
+        position: fixed;
+        left: -100%;
+        top: 10vh;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        margin-top: 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    /* Home Mobile */
+
+    .home {
+        background-image: url(./assets/aeimnestus-mobile.png);
+        background-position: center bottom;
+        background-size: 70%;
+    }
+
+    .home-intro {
+        padding-top: 20vh;
+    }
+
+    .home-intro > h1 {
+        font-size: 54px;
+    }
+} 
