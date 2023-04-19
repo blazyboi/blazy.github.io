@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -207,5 +208,37 @@ body {
 
     .home-intro > h1 {
         font-size: 54px;
+    }
+
+    /* About Mobile */
+
+    .about {
+        height: 250vh;
+    }
+
+    .about-intro > h1 {
+        font-size: 54px;
+    }
+    
+    .about-intro > p {
+        font-size: 16px;
+    }
+
+    .about-cards {
+        flex-direction: column;
+        align-items: center;
+        height: 200vh;
+        padding-top: 10vh;
+        width: 100vw;
+    }
+
+    .about-card {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .temp {
+        font-size: 64px;
+        padding-top: 30vh;
     }
 } 
