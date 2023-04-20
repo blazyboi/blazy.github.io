@@ -92,8 +92,18 @@ body {
 
 .about {
     padding-top: 10vh;
+    height: 180vh;
+    overflow: hidden;
+}
+
+.about-overview {
     height: 100vh;
 }
+
+.about-skills {
+    height: 90vh;
+}
+
 
 .about-intro {
     padding-left: 8vw;
@@ -127,6 +137,26 @@ body {
 
 .about-card > h1 {
     padding-top: 3vh;
+}
+
+.about-balls {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    height: 25vh;
+}
+
+.about-ball {
+    background-color: #8b7f6e;
+    border-radius: 50%;
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex: 1 0 21%;*/
 }
 
 /* Projects */
@@ -213,7 +243,11 @@ body {
     /* About Mobile */
 
     .about {
-        height: 250vh;
+        height: 350vh;
+    }
+
+    .about-overview {
+    height: 240vh;
     }
 
     .about-intro > h1 {
@@ -235,6 +269,22 @@ body {
     .about-card {
         width: 90vw;
         height: 40vh;
+    }
+
+    .about-skills {
+        padding-top: 20vh;
+        overflow: hidden;
+    }
+
+    .about-balls {
+        padding-left: 3vw;
+        padding-right: 3vw;
+        height: 20vh;
+    }
+
+    .about-ball {
+        height: 12vh;
+        width: 12vh;
     }
 
     .temp {
