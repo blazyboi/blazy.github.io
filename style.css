@@ -94,6 +94,9 @@ body {
     padding-top: 10vh;
     height: 180vh;
     overflow: hidden;
+    background-image: url(./assets/waves.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about-overview {
@@ -176,6 +179,9 @@ body {
 
 .contact {
     height: 100vh;
+    background-image: url(./assets/bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contact-title {
@@ -290,6 +296,11 @@ body {
 
     .nav-list.active {
         left: 0;
+    }
+
+    .nav-link {
+        color: #f5f5f5;
+        font-weight: 700;
     }
 
     /* Home Mobile */
