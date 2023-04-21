@@ -92,7 +92,7 @@ body {
 
 .about {
     padding-top: 10vh;
-    height: 180vh;
+    height: 190vh;
     overflow: hidden;
     background-image: url(./assets/waves.svg);
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@ body {
 }
 
 .about-skills {
-    height: 90vh;
+    height: 100vh;
 }
 
 
@@ -163,10 +163,16 @@ body {
     /*flex: 1 0 21%;*/
 }
 
+.about-ball > i {
+    font-size: 8vh;
+}
+
 /* Projects */
 
 .projects {
     height: 100vh;
+    background-image: url(./assets/circles.svg);
+    background-size: 25vw;
 }
 
 .temp {
