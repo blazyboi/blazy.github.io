@@ -157,14 +157,52 @@ body {
     border-radius: 50%;
     height: 15vh;
     width: 15vh;
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
-    /*flex: 1 0 21%;*/
+    flex: 1 0 21%;*/
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    overflow: visible;
 }
 
 .about-ball > i {
     font-size: 8vh;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.about-ball > .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #8b7f6e;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+}
+
+.about-ball > .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.about-ball:hover > .tooltiptext {
+    visibility: visible;
 }
 
 /* Projects */
@@ -370,6 +408,23 @@ body {
     .about-ball {
         height: 12vh;
         width: 12vh;
+    }
+
+    .about-ball > .tooltiptext {
+        visibility: hidden;
+        width: 100px;
+        background-color: #8b7f6e;
+        color: black;
+        font-weight: 600;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        z-index: 1;
+        top: 110%;
+        left: 50%;
+        margin-left: -50px;
+        position: absolute;
     }
 
     .temp {
