@@ -140,7 +140,9 @@ body {
 
 .about-card > h1 {
     padding-top: 3vh;
-    color: #f5e6d1;
+    color: black;
+    text-align: center;
+    font-size: 28px;
 }
 
 .about-balls {
