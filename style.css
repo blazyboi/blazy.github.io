@@ -96,6 +96,24 @@ body {
     background-color: black;
 }
 
+/* Dark Mode */
+
+/*.dark-toggle {
+    z-index: 500;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    font-size: 40px;
+    background-color: #4b4a47;
+    color: #f5e6d1;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
 /* Home */
 
 .home {
@@ -495,3 +513,17 @@ body {
         height: 15vw;
     }
 } 
+
+/* Firefox */
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+    }
+}
+
+/* Chrome */
+@media (forced-colors: active) {
+    :root {
+        color-scheme: light;
+    }
+}
