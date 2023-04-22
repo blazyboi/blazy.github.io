@@ -517,13 +517,13 @@ body {
 /* Firefox */
 @media (prefers-color-scheme: dark) {
     :root {
-        color-scheme: light;
+        color-scheme: only light;
     }
 }
 
 /* Chrome */
 @media (forced-colors: active) {
     :root {
-        color-scheme: light;
+        color-scheme: only light;
     }
 }
