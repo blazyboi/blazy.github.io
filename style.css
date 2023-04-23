@@ -318,7 +318,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 220vh;
+    height: 280vh;
 }
 
 .projects-card > a {
@@ -484,7 +484,7 @@ body {
     }
 
     .nav-link {
-        color: #f5f5f5;
+        color: black;
         font-weight: 700;
     }
 
@@ -584,7 +584,7 @@ body {
     }
 
     .projects-showcase {
-        height: 110vh !important;
+        height: 150vh !important;
     }
     
     .projects-card {
