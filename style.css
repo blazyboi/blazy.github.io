@@ -7,6 +7,16 @@
     overflow-x: hidden;
 }
 
+/* Hide Scrollbar */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+*{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 body {
     background-color: #f5e6d1;
 }
@@ -277,6 +287,67 @@ body {
     height: 100vh;
     background-image: url(./assets/circles.svg);
     background-size: 25vw;
+    padding-top: 10vh;
+}
+
+.projects-title {
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 48px;
+    height: 20vh;
+}
+
+.projects-card {
+    /* From https://css.glass */
+    background: rgb(255 238 217);;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    border: 1px solid rgba(236, 232, 227, 0.3);
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 67vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-showcase {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 220vh;
+}
+
+.projects-card > a {
+    text-align: center;
+}
+
+.projects-mockup {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.projects-card > a {
+    transition: transform .2s;
+    width: 50%;
+}
+  
+.projects-card > a:hover {
+    transform: scale(1.1);
+}
+
+.projects-name {
+    font-size: 24px;
+    padding-top: 2vh;
+    color: #4b4a47;
+}
+
+.projects-desc {
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .temp {
@@ -440,7 +511,7 @@ body {
     }
 
     .about-overview {
-    height: 250vh;
+        height: 260vh;
     }
 
     .about-intro > h1 {
@@ -461,7 +532,7 @@ body {
 
     .about-card {
         width: 90vw;
-        height: 40vh;
+        height: vh;
     }
 
     .about-card > h1 {
@@ -504,6 +575,30 @@ body {
     .temp {
         font-size: 64px;
         padding-top: 30vh;
+    }
+
+    /* Projects Mobile */
+
+    .projects-title {
+        font-size: 32px;
+    }
+
+    .projects-showcase {
+        height: 110vh !important;
+    }
+    
+    .projects-card {
+        height: 30vh !important; 
+        width: 90vw !important;
+    }
+    
+    .projects-name {
+        font-size: 12px !important;
+    }
+    
+    .projects-desc {
+        font-size: 12px !important;
+        text-align: center;
     }
 
     /* Contact Mobile */
