@@ -318,7 +318,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 280vh;
+    height: 340vh;
 }
 
 .projects-card > a {
@@ -526,14 +526,14 @@ body {
     .about-cards {
         flex-direction: column;
         align-items: center;
-        height: 220vh;
+        height: 180vh;
         padding-top: 10vh;
         width: 100vw;
     }
 
     .about-card {
         width: 90vw;
-        height: vh;
+        height: 35vh;
     }
 
     .about-card > h1 {
@@ -588,7 +588,7 @@ body {
     }
 
     .projects-showcase {
-        height: 150vh !important;
+        height: 180vh !important;
     }
     
     .projects-card {
