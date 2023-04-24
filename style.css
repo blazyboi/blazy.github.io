@@ -84,7 +84,7 @@ body {
 }
 
 .nav-link {
-    transition: 0.7s ease;
+    transition: 0.5s ease;
     text-decoration: none;
     color: black;
 }
@@ -142,8 +142,28 @@ body {
     padding-left: 5vw;
 }
 
+
+.home-intro > a > button {
+    border: none;
+    border-radius: 28px;
+    padding: 2vh 2vw;
+    font-size: 18px;
+    background-color: #4b4a47;
+    color: whitesmoke;
+    font-weight: 500;
+    transition: 0.5s ease;
+} 
+
+.home-intro > a > button:hover{
+    background-color: #8b7f6e;
+}
+
 .home-intro > h1 {
     font-size: 72px;
+}
+
+.home-intro > h2 {
+    padding-bottom: 2vh;
 }
 
 .home-highlight {
@@ -397,6 +417,7 @@ body {
     border-radius: 40px;
     font-size: 16px;
     font-weight: 700;
+    transition: 0.5s ease;
 }
 
 .contact-button > a > button:hover {
