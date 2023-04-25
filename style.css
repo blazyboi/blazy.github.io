@@ -338,7 +338,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 340vh;
+    height: 440vh;
 }
 
 .projects-card > a {
@@ -459,6 +459,14 @@ body {
 
 /* Responsive */
 
+@media screen and (max-width: 600px){
+    .home {
+        background-image: url(./assets/aeimnestus-mobile.png);
+        background-position: center bottom;
+        background-size: 70%;
+    }
+}
+
 @media screen and (max-width: 992px){
 
     /* Nav & Hamburger Mobile */
@@ -510,12 +518,6 @@ body {
     }
 
     /* Home Mobile */
-
-    .home {
-        background-image: url(./assets/aeimnestus-mobile.png);
-        background-position: center bottom;
-        background-size: 70%;
-    }
 
     .home-intro {
         padding-top: 20vh;
@@ -609,7 +611,7 @@ body {
     }
 
     .projects-showcase {
-        height: 180vh !important;
+        height: 230vh !important;
     }
     
     .projects-card {
