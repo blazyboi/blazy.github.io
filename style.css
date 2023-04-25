@@ -527,6 +527,11 @@ body {
         font-size: 54px;
     }
 
+    .home-intro > a > button {
+        padding: 2vh 4vw;
+        font-size: 14px;
+    } 
+
     /* About Mobile */
 
     .about {
