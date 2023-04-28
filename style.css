@@ -196,14 +196,15 @@ body {
 
 .about-intro {
     padding-left: 8vw;
+    padding-right: 8vw;
 }
 
 .about-intro > h1 {
-    font-size: 76px;
+    font-size: 64px;
 }
 
 .about-intro > p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .about-cards {
@@ -338,7 +339,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 440vh;
+    height: 520vh;
 }
 
 .projects-card > a {
@@ -616,7 +617,7 @@ body {
     }
 
     .projects-showcase {
-        height: 230vh !important;
+        height: 260vh !important;
     }
     
     .projects-card {
