@@ -339,7 +339,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 520vh;
+    height: 580vh;
 }
 
 .projects-card > a {
@@ -626,7 +626,7 @@ body {
     }
 
     .projects-showcase {
-        height: 260vh !important;
+        height: 290vh !important;
     }
     
     .projects-card {
